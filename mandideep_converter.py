@@ -25,7 +25,7 @@ def main():
         first_half = first_half.tail(first_half.shape[0] - 1)
         second_half = second_half.rename(columns=second_half.iloc[0]).drop(["From Date", "To Date"], axis=1).tail(
             second_half.shape[0] - 1)
-        third_half = third_half.rename(columns=third_half.iloc[0]).drop(["From Date", "To Date", "Temp"], axis=1).tail(
+        third_half = third_half.rename(columns=third_half.iloc[0]).drop(["From Date", "To Date"], axis=1).tail(
             third_half.shape[0] - 1)
         fourth_half = fourth_half.rename(columns=fourth_half.iloc[0]).drop(["From Date", "To Date"],
                                                                            axis=1).tail(fourth_half.shape[0] - 1)
