@@ -29,7 +29,7 @@ def excel_file_converter(df):
 
 def main():
     st.set_page_config(
-        page_title="CPCB file converter",
+        page_title="CPCB Excel Converter",
         initial_sidebar_state="expanded",
         layout="wide",
     )
